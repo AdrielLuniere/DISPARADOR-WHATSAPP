@@ -1,0 +1,28 @@
+{
+  "name": "whatsapp-dispatcher",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Sistema de disparo de mensagens WhatsApp com filas e fluxos automáticos",
+  "main": "src/app.ts",
+  "scripts": {
+    "start:api": "npx tsx src/app.ts",
+    "start:worker": "npx tsx src/workers/index.ts",
+    "start:dev": "npx tsx src/server.ts",
+    "db:migrate": "npx prisma migrate dev",
+    "db:studio": "npx prisma studio",
+    "seed": "npx tsx seed.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.0.0",
+    "bullmq": "^5.0.0",
+    "dotenv": "^16.0.0",
+    "fastify": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "prisma": "^5.0.0",
+    "ts-node": "^10.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
