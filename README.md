@@ -84,14 +84,14 @@ Este projeto contém adaptações específicas para rodar em ambientes de desenv
 _Visualização dos contatos cadastrados através do Prisma Studio._
 
 ![Lista de Contatos](./src/img/imgContatos.png)
-_(Substitua este link pela imagem dos contatos)_
+
 
 ### 2. Disparos e Logs de Envio
 
 _Visualização do terminal processando a fila e dos status de envio._
 
 ![Logs de Envio](./src/img/imgMensagens.png)
-_(Substitua este link pela imagem do terminal ou tabela QueueItem)_
+
 
 ## 🤖 Desenvolvimento Colaborativo com IA
 
