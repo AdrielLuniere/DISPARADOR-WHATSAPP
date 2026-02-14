@@ -76,3 +76,11 @@ Este projeto contém adaptações específicas para rodar em ambientes de desenv
 3.  **Logs não apareciam (Processos Separados):**
     - **Problema:** Ao rodar API e Worker em terminais separados (`start:api` e `start:worker`), a fila em memória (Mock) não funcionava, pois cada processo tinha sua própria memória isolada.
     - **Solução:** Criação do script `npm run start:dev` que executa o arquivo `src/server.ts`. Esse arquivo inicia tanto a API quanto os Workers no **mesmo processo Node.js**, permitindo o compartilhamento de memória e o funcionamento correto da fila Mock.
+
+## 🤖 Desenvolvimento Colaborativo com IA
+
+Este projeto utilizou Inteligência Artificial como ferramenta de suporte técnico avançado ("Pair Programming"). A IA foi fundamental para:
+
+1.  **Diagnóstico Rápido:** Identificação e correção de incompatibilidades entre bibliotecas (`ts-node` vs Node 24).
+2.  **Arquitetura Adaptativa:** Brainstorming para criar a solução de `MockQueue`, contornando limitações de infraestrutura local (Docker/Windows) sem sacrificar a qualidade do código.
+3.  **Automação:** Geração de scripts de setup e scaffolding inicial do banco de dados.
