@@ -77,6 +77,22 @@ Este projeto contém adaptações específicas para rodar em ambientes de desenv
     - **Problema:** Ao rodar API e Worker em terminais separados (`start:api` e `start:worker`), a fila em memória (Mock) não funcionava, pois cada processo tinha sua própria memória isolada.
     - **Solução:** Criação do script `npm run start:dev` que executa o arquivo `src/server.ts`. Esse arquivo inicia tanto a API quanto os Workers no **mesmo processo Node.js**, permitindo o compartilhamento de memória e o funcionamento correto da fila Mock.
 
+## 📸 Demonstração do Sistema
+
+### 1. Gerenciamento de Contatos
+
+_Visualização dos contatos cadastrados através do Prisma Studio._
+
+![Lista de Contatos](./src/img/imgContatos.png)
+_(Substitua este link pela imagem dos contatos)_
+
+### 2. Disparos e Logs de Envio
+
+_Visualização do terminal processando a fila e dos status de envio._
+
+![Logs de Envio](./src/img/imgMensagens.png)
+_(Substitua este link pela imagem do terminal ou tabela QueueItem)_
+
 ## 🤖 Desenvolvimento Colaborativo com IA
 
 Este projeto utilizou Inteligência Artificial como ferramenta de suporte técnico avançado ("Pair Programming"). A IA foi fundamental para:
